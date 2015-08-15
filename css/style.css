@@ -1,81 +1,95 @@
 
+/*--------------------HTML style----------------------*/
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
+
+/*--------------------body style----------------------*/
 body {
-    
-    font-family: sans-serif; 
-    letter-spacing: 0.03em;
+    font-family:'Roboto',sans-serif; 
+    letter-spacing: 0.04em;
     margin:0;
-
 }
 
+/*--------------------header style----------------------*/
+.header {
+    background-color: white;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 9999;
+    border-bottom: solid #CBCDD2 1px;
+}
 
-.header{background-color: white;
-position:fixed;
-width:100%;
-z-index: 9999;
-border-bottom: solid #CBCDD2 1px;}
-
-.header > .content{ 
-
+.header > .content { 
     height: 4.375rem;
     margin: 0 auto;
-    padding:0 15px;
     width:60%;  
     color: #838994; 
-    font-size: 16px;
-    }
+    font-size: 1.05rem;
+}
 
-.logo{
+.logo {
     float:left;
     margin-top:0.9rem;
- }
+}
 
 .nav {
     float:right;
     margin-top:0.6rem;
     -webkit-font-smoothing: antialiased;
-  }
+}
 
-.nav li{
+.nav li {
     display:inline-block;
-    margin-left:1rem; 
-  }
+    margin-left:1.05rem;
+}
 
 
-.nav li:hover{color: #333333;
-cursor: pointer;}
+.nav li:hover {
+    color: #333333;
+    cursor: pointer;
+}
 
-.active{ 
+.active { 
     color: #4c5058;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.cover{
-    background-image: url('images/first-background.jpg') ;
+
+/*--------------------cover style----------------------*/
+.cover {
+    position:relative;
+    top:4.375rem;
+    background-image: url('images/first-background.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 45.938rem;
-    background-position: center bottom;
+    background-size:cover;
+    height: 37rem;
+    background-position:center center;
 }
 
-.cover > .content{
+.cover > .content {
     text-align: center;
     margin:0 auto;
     padding-top:12rem;
     width:60%;  
-    color: white;
-    font-weight: 300;
+    color: white;    
 }
 
-.cover > .content > h1{font-size: 3.125rem;}
+.cover > .content > h1 {
+    font-size: 3.125rem; 
+    margin:0;
+  font-weight: 100;}
 
-.cover > .content > h3{font-size: 1.563rem;
-    margin-top: 1.25rem;}
+.cover > .content > h3 {
+    font-size: 1.563rem;
+    margin-top: 1rem;
+      font-weight: 100;
+}
 
 .big-button {
     width: 9.688rem;
@@ -96,41 +110,88 @@ cursor: pointer;}
     cursor: pointer;
 }
 
-.main> .content{
+
+/*----------------------main style----------------------------*/
+
+.main{
+    position:relative;
+    top:4.375rem;}
+
+.main > .content {
     text-align: center;
-     margin: 6rem auto;
+     margin: 0 auto;
     text-align: center;
-    width:60%;  
-    }
-
-.main h2{    font-size: 2.75rem;
-    margin: 1.625rem 0 3.125rem;
-font-weight: 300;}
-
-.three-icon{list-style: none;  padding-left: 0;}
-
-.three-icon li{display: inline-block; width:32%;}
-
-.three-icon h3 {
-    font-weight: 400;
-    font-size: 1.35rem;
-    margin: 2.5rem 0px 1.875rem;
+    width:60%;
+    padding-top: 6rem;
 }
 
-.footer > .content{
-    text-align: center;
-    margin:6rem auto;
-    text-align: center;
-    width:60%; 
-    }
+.main h2 {    
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
 
-.footer li{border-radius: 1.25rem;
+.three-icon {
+    list-style: none;  
+    padding-left: 0;
+}
+
+.three-icon li{
+    display: inline-block;
+    width:32%;
+}
+
+.three-icon h3 {
+    font-weight: 300;
+    font-size: 1.35rem;
+    margin: 2.5rem 0 1.875rem 0;
+}
+
+
+/*-------------------------footer style--------------------------*/
+.footer{
+    position:relative;
+    top:4rem;
+margin-bottom:4rem;}
+
+.footer > .content {
+    text-align: center;
+    margin:0 auto;
+    text-align: center;
+    width:60%;
+    padding:4rem 0;
+}
+
+.footer li {
+    border-radius: 1.25rem;
     width: 2.5rem;
     display: inline-block;
     margin: 1.25rem 5px;
     border: 1px solid #eaebec;
     padding: 0.625rem 0;
-    text-align: center;}
+    text-align: center;
+    cursor:pointer;
+}
+ 
+.footer h4{
+    font-weight: 100;
+    margin-bottom: 0;}
 
+.icons {
+    list-style: none;
+    padding-left: 0;
+    margin-top:0;
+    margin-bottom: 0;
+}
 
-.icons{list-style: none;  padding-left: 0;}
+.footer p{
+    margin-top:0;
+    color: #838994;
+    font-weight: 100; }
+    
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa{font: normal normal normal 14px/1 FontAwesome;}

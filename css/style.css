@@ -6,13 +6,16 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
+    margin: 0; 
+    padding: 0;
 }
 
 /*--------------------body style----------------------*/
 body {
     font-family:'Roboto',sans-serif; 
     letter-spacing: 0.04em;
-    margin:0;
+    margin: 0; 
+    padding: 0;
 }
 
 /*--------------------header style----------------------*/
@@ -23,7 +26,8 @@ body {
     top:0;
     width:100%;
     z-index: 9999;
-    border-bottom: solid #CBCDD2 1px;
+    border-bottom: solid #CBCDD2 0.1rem;
+
 }
 
 .header > .content { 
@@ -32,26 +36,27 @@ body {
     width:60%;  
     color: #838994; 
     font-size: 1.05rem;
+    min-width: 50rem;
 }
 
 .logo {
-    float:left;
+    /*float:left;*/
     margin-top:0.9rem;
 }
 
-.nav {
+.links{
     float:right;
-    margin-top:0.6rem;
+    margin-top:1.7rem;
     -webkit-font-smoothing: antialiased;
 }
 
-.nav li {
+.links li {
     display:inline-block;
     margin-left:1.05rem;
 }
 
 
-.nav li:hover {
+.links li:hover {
     color: #333333;
     cursor: pointer;
 }
@@ -70,7 +75,7 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
     height: 37rem;
-    background-position:center center;
+    background-position:center center ;
 }
 
 .cover > .content {
@@ -153,7 +158,7 @@ body {
 .footer{
     position:relative;
     top:4rem;
-margin-bottom:4rem;}
+    padding-bottom:4rem;}
 
 .footer > .content {
     text-align: center;
@@ -176,7 +181,8 @@ margin-bottom:4rem;}
  
 .footer h4{
     font-weight: 100;
-    margin-bottom: 0;}
+    margin-bottom: 0;
+    margin-top: 1rem;}
 
 .icons {
     list-style: none;
@@ -190,9 +196,10 @@ margin-bottom:4rem;}
     color: #838994;
     font-weight: 100; }
     
+.fa-twitter{color:#4099FF;}
 
-.fa-twitter:before {
-    content: "\f099";
-}
+.fa-facebook{color:#3b5998;}
+
+.fa-instagram{color:#3f729b;}
 
 .fa{font: normal normal normal 14px/1 FontAwesome;}
